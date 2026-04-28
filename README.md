@@ -46,7 +46,7 @@ For comparison, building the same project with the file renamed to root `middlew
 Operating System: Windows 11 Home (win32 x64)
 Node: 25.9.0
 npm: 11.12.1
-next: 16.2.4
+next: 16.3.0-canary.3 (also reproduces on 16.2.4 stable)
 react: 19.2.5
 react-dom: 19.2.5
 typescript: 6.0.2
@@ -54,8 +54,9 @@ typescript: 6.0.2
 
 ## Also tested
 
+- Stable `16.2.4` — same result, manifest is empty.
+- Canary `16.3.0-canary.3` — same result.
 - `src/proxy.ts` placement — same result, manifest is empty.
-- Patch upgrade 16.2.3 → 16.2.4 — same result.
 - Vercel production builds (Linux Lambda) — also affected; we only ship `middleware.ts` to production for this reason.
 
 ## Prior art
